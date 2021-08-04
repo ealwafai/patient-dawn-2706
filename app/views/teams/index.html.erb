@@ -1,0 +1,8 @@
+<h1>Teams</h1>
+
+<% @teams.sort_by_average_age.each do |team| %>
+  <div id="team-<%=team.id%>">
+    <h3><%= team.nickname %></h3>
+    <p>Average player age: <%= team.average_age %></p>
+  </div>
+<% end %>
