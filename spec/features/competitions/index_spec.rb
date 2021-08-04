@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe 'Competition Index' do
   before :each do
     @competition_1 = Competition.create!(name: 'Champions League', location: 'Italy', sport: 'Soccer')
-    @competition_2 = Competition.create!(name: 'NBA', location: 'USA', sport: 'Basketball')
-    @competition_3 = Competition.create!(name: 'Wimbledon', location: 'UK', sport: 'Tennis')
+    @competition_2 = Competition.create!(name: 'Europa League', location: 'Germany', sport: 'Soccer')
+    @competition_3 = Competition.create!(name: 'Premier League ', location: 'UK', sport: 'Soccer')
 
     visit "/competitions"
   end
