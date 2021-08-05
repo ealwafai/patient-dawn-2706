@@ -5,7 +5,6 @@ class Competition < ApplicationRecord
   def average_player_age
     teams
     .joins(:players)
-    .select('players.*')
     .average(:age).to_f
   end
 end
